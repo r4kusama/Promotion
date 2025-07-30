@@ -1,0 +1,37 @@
+body {
+    /* フォント設定 */
+    font-family: 'Inter', sans-serif; /* Google FontsのInterを使用 */
+    /* 背景色を白に設定 */
+    background-color: #ffffff;
+    /* テキストの色を黒に設定 */
+    color: #000000;
+    /* ページ全体の高さをビューポートに合わせる */
+    min-height: 100vh;
+    /* Flexboxを使ってコンテンツを中央に配置 */
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center;     /* 垂直方向の中央揃え */
+    margin: 0; /* デフォルトのマージンをリセット */
+    padding: 20px; /* 内側の余白 */
+    box-sizing: border-box; /* パディングを幅に含める */
+}
+
+.container {
+    /* テキストの最大幅を設定し、長文でも読みやすくする */
+    max-width: 600px;
+    /* テキストを中央揃えにする */
+    text-align: center;
+    /* フォントサイズを大きくして見やすくする */
+    font-size: 1.8rem; /* レスポンシブ対応の単位 */
+    /* 行の高さを調整して読みやすくする */
+    line-height: 1.6;
+    /* 文字間隔を調整 */
+    letter-spacing: 0.05em;
+}
+
+/* モバイルデバイス向けの調整 */
+@media (max-width: 768px) {
+    .container {
+        font-size: 1.4rem; /* モバイルでは少し小さく */
+    }
+}
